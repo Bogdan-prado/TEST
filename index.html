@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Input Forms</title>
+</head>
+
+<body>
+    <h2>calculator</h2>
+
+    <div class="container">
+        <form id="calculator" method="get">
+            <div>
+                <div>
+                    <label for="fnumber">Input First Number</label>
+                </div>
+                <div>
+                    <input type="number" id="fnumber" name="firstnumbet" placeholder="First Number.." />
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="snumber">Input Second Number</label>
+                </div>
+                <div>
+                    <input type="number" id="snumber" name="secondnumber" placeholder="Second Number.." />
+                </div>
+            </div>
+            <select id="select" name="operation">
+                <option name="" id="multiplication" value="multiplication">
+                    multiplication
+                </option>
+                <option name="" id="division" value="division">division</option>
+                <option name="" id="subtraction" value="subtraction">
+                    subtraction
+                </option>
+                <option name="" id="addition" value="addition">addition</option>
+            </select>
+            <br />
+            <div>
+                <input id="submit" type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+
+    <span id="output"></span>
+    <script src="index.js"></script>
+</body>
+</html>
